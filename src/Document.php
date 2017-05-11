@@ -271,7 +271,7 @@ class Document
     public function image($path)
     {
         // Verificando se imagem existe
-        if (!$this->files->exists($path)) {
+        if (! $this->files->exists($path)) {
             throw new \Exception('Imagem não encontrada no caminho especificado!');
         }
 
