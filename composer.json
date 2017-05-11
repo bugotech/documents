@@ -1,0 +1,32 @@
+{
+    "name"       : "bugotech/documents",
+    "description": "The Bugotech Documents Components",
+    "keywords"   : [ "documents", "php", "netforce", "bugotech" ],
+    "license"    : "GPL v.3",
+    "authors"    : [
+        {
+            "name" : "Bruno Gonçalves",
+            "email": "bugotech@gmail.com"
+        }
+    ],
+
+    "require"    : {
+        "dompdf/dompdf"               : "0.6.*",
+        "bugotech/io"                 : "1.0.*",
+        "illuminate/http"             : "5.2.*",
+        "picqer/php-barcode-generator": "^0.2.0"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Bugotech\\Documents\\": "src/"
+        }
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable"    : true
+}
