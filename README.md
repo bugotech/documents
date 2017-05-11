@@ -1,2 +1,2 @@
 # documents
-Bugotech Documents
+Bugotech Documents Components
