@@ -1,5 +1,6 @@
 <?php namespace Bugotech\Documents;
 
+use Dompdf\Dompdf;
 use Bugotech\IO\Filesystem;
 use Illuminate\Http\Response;
 use Picqer\Barcode\BarcodeGeneratorPNG;
@@ -131,10 +132,10 @@ class Document
 
         $html = $this->convertEntities($html);
 
-        $pdf = new \DOMPDF();
-        $pdf->set_base_path(__DIR__);
-        $pdf->load_html($html);
-        $pdf->set_paper($this->pageSize, $this->orientation);
+        $pdf = new Dompdf();
+        $pdf->setBasePath(__DIR__);
+        $pdf->loadHtml($html);
+        $pdf->setPaper($this->pageSize, $this->orientation);
 
         $pdf->render();
 
