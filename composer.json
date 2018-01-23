@@ -2,7 +2,7 @@
     "name"       : "bugotech/documents",
     "description": "The Bugotech Documents Components",
     "keywords"   : [ "documents", "php", "netforce", "bugotech" ],
-    "license"    : "GPL v.3",
+    "license"    : "GPL-3.0-only",
     "authors"    : [
         {
             "name" : "Bruno Goncalves",
